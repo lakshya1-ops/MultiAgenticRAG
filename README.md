@@ -1,34 +1,31 @@
-## MultiAgentic RAG
+# Enterprise Multi-Agent RAG System
 
-This repository showcases the implementation of a **Multi-Agent Research RAG (Retriever-Augmented Generation) Tool** built with **LangGraph**. This project leverages the capabilities of agent-based frameworks to handle complex queries by breaking them down into manageable steps, dynamically utilizing tools, and ensuring response accuracy through error correction and hallucination checks.
+Enterprise-grade, modular Retrieval-Augmented Generation (RAG) pipeline built with LangChain and LangGraph to process, extract, and analyze unstructured enterprise documents.
 
-## Getting Started
+---
 
-To get started with this project, follow these steps:
+### Features
 
-First, clone the repository to your local machine:
+* **Multi-Agent Architecture:** Utilizes specialized functional agents powered by LangGraph to dynamically handle query routing, context retrieval, and multi-step reasoning.
+* **Document Intelligence:** Extracts, processes, and indexes text and tables from complex enterprise file formats.
+* **Evaluation & Guardrails:** Built-in evaluation routines to monitor hallucination rates, answer relevancy, and response faithfulness.
+* **Interactive UI:** Includes a clean, responsive Streamlit interface for seamless querying and testing.
 
-```bash
-git clone https://github.com/nicoladisabato/MultiAgenticRAG.git
-cd MultiAgenticRAG
-```
+---
 
-```bash
-pip install -r requirements.txt
-```
+### Tech Stack
 
-Then open the config.yml file located in the root directory of the project. Set the value of load_documents to **true** to ensure the necessary documents are loaded into the vector database:
+* **Core:** Python
+* **Orchestration:** LangChain, LangGraph
+* **Vector Store & Embeddings:** ChromaDB / Pinecone, OpenAI / Hugging Face embeddings
+* **Interface:** Streamlit
+* **Deployment:** Docker
 
-Then run:
+---
 
-```bash
-python3 -m retriever.retriever
-```
+### Quick Start
 
-Once the PDF has been processed and indexed, you can start the application by running the following command:
-
-```bash
-python3 app.py
-```
-
-Now ask your question based on the document: https://sustainability.google/reports/google-2024-environmental-report/
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/lakshya1-ops/MultiAgenticRAG.git](https://github.com/lakshya1-ops/MultiAgenticRAG.git)
+   cd MultiAgenticRAG
